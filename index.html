@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Libros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock:wght@700&display=swap"> <!-- Tipografía victoriana -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Biblioteca Yulissa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flowers.html">Frorecitas para una flor</a>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="victorian-font">Biblioteca Personal de Yulissa</h1>
+            <!-- Barra de búsqueda añadida -->
+            <div class="d-flex justify-content-center mt-4">
+                <form class="form-inline search-form">
+                    <input id="searchInput" class="form-control search-input" type="search" placeholder="Buscar libros" aria-label="Buscar">
+                    <button class="btn search-button" type="button" onclick="searchBooks()">Buscar</button>
+                </form>
+            </div>
+        </div>
+        <!-- Botón destacado en la esquina inferior derecha -->
+<a href="" id="highlightButton" class="btn btn-highlight">¡Haz clic aquí!</a>
+
+    </header>
+    <main class="container mt-4">
+        <section id="bookList" class="book-list">
+            <article class="book-item" data-title="Cara a cara con el psicópata">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/510BRPhaFUL._AC_UF1000,1000_QL80_.jpg" alt="Miniatura del Libro 1" class="card-img-top book-thumbnail">
+                    <div class="card-body book-details">
+                        <a href="pdf/Cara_a_cara_con_el_psicopata_Vicente_Gar.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="book-item" data-title="La mente criminal">
+                <div class="card">
+                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/a9029786-4c0d-4186-8c62-a416e277195a/d_360_620/9788484606444.webp" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                    <div class="card-body book-details">
+                        <a href="pdf/La_mente_criminal_Vicente_Garrido.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="book-item" data-title="Perfiles Criminales">
+                <div class="card">
+                    <img src="https://planetadelibrosve0.cdnstatics.com/usuaris/libros/fotos/181/m_libros/180036_perfiles-criminales_9788434470460.jpg" alt="Miniatura del Libro 3" class="card-img-top book-thumbnail">
+                    <div class="card-body book-details">
+                        <a href="pdf/Perfiles Criminales ( PDFDrive ).pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="book-item" data-title="Crímenes Exquisitos">
+                <div class="card">
+                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/50e2fd31-74de-431b-9028-d98efea4618a/d_360_620/portada_crimenes-exquisitos_vicente-garrido-genoves_202207081146.webp" alt="Miniatura del Libro 4" class="card-img-top book-thumbnail">
+                    <div class="card-body book-details">
+                        <a href="pdf/Crimenes_exquisitos_Vicente_Garrido.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="book-item" data-title="Asesinos Múltiples y Otros Depredadores">
+                <div class="card">
+                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/36ddc188-aa93-4fee-8b88-1274d05bc46d/d_360_620/portada_asesinos-multiples-y-otros-depredadores-sociales_vicente-garrido-genoves_201805131022.webp" alt="Miniatura del Libro 5" class="card-img-top book-thumbnail">
+                    <div class="card-body book-details">
+                        <a href="pdf/Asesinos_multiples_y_otros_depredadores.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="book-item" data-title="Los Muertos Viajan Deprisa">
+                <div class="card">
+                    <img src="https://www.penguinlibros.com/es/2238855-thickbox_default/los-muertos-viajan-deprisa.jpg" alt="Miniatura del Libro 6" class="card-img-top book-thumbnail">
+                    <div class="card-body book-details">
+                        <a href="https://serlib.com/pdflibros/9788466657815.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                    </div>
+                </div>
+            </article>
+        </article>
+        <article class="book-item" data-title="La_Condesa_Sangrienta">
+            <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1277412526i/6884116.jpg" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/La_Condesa_Sangrienta_Alejandra_Pizarnik.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="diarios">
+            <div class="card">
+                <img src="https://acdn.mitiendanube.com/stores/001/029/689/products/695625-dd126aeaf762f958bb16972967546435-1024-1024.webp" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/alejandra_pizarnik_diarios_1_1954_a_195.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="Poesia Completa">
+            <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1369199656i/401060.jpg" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/Alejandra_Pizarnik_Poesia_Completa.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="Arbol de Diana Edicio">
+            <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1343735887i/15779049.jpg" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/ALEJANDRA_PIZARNIK_Arbol_de_Diana_Edicio.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="ante la violencia sexual infantil">
+            <div class="card">
+                <img src="https://www.terradelibros.com/media/pax/images/thumbs/edition-142720-236x319.jpg" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="https://www.terradelibros.com/media/pax/files/sample-150167.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="ANTOLOGÍA POÉTICA">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/31NZ4zhEDiL._SY385_.jpg" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="https://materialdelectura.unam.mx/images/stories/pdf5/alejandra-pizarnik.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="EL ECO DE MIS MUERTES">
+            <div class="card">
+                <img src="https://traficantes.net/sites/default/files/book_covers//9788412537154.gif" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="https://shop.santiagocaruso.com.ar/wp-content/uploads/2022/07/EL-ECO-DE-MIS-MUERTES-preview.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="A Musical Hell">
+            <div class="card">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvlyCQjXEcsDSh6XvnJgvKAKGoqtlbj5gC9lfku50F5betvZvJ" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="https://docs.google.com/file/d/0B2pra8lhhoOKU0xPa2RkLXdKUEU/edit?resourcekey=0-2e1uF86uKsX63WFK-EOuLw" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="Territorial Games">
+            <div class="card">
+                <img src="https://image.cdn0.buscalibre.com/3309307.__RS360x360__.jpg" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/Territoria lGames.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="LAS MUJERES QUE AMAN DEMASIADO">
+            <div class="card">
+                <img src="https://tecniciencia.com/cdn/shop/products/9788490707760.jpg?v=1707102628" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/LAS_MUJERES_QUE_AMAN_DEMASIADO.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="Carta De Amor A Los Muertos">
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_832751-MLU70713233232_072023-O.webp" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/Carta_de_amor_a_los_muertos_Ava_Dellaira.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="el murmullo de las abejas">
+            <div class="card">
+                <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/08/aa/08aab9c65428e4bc8d40d77051aff8bd.jpg" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/El murmullo de las abejas - Sofia Segovia.pdf" target="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="el arte de ser nosotros">
+            <div class="card">
+                <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/e1712b24-633d-4483-85c9-0e3b30a652df/d_360_620/portada_el-arte-de-ser-nosotros_inma-rubiales_202212231040.webp" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/El arte de ser nosotros - Inma Rubiales.pdf="_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="El faro de los amores dormidos">
+            <div class="card">
+                <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/51b6e6b5-9538-42b1-8960-e37ec6e4b840/d_360_620/portada_el-faro-de-los-amores-dormidos_andrea-longarela_202204051646.webp" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/El faro de los amores dormidos.pdf"_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="la casa del mar mas azul">
+            <div class="card">
+                <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/bdc3c322-baed-4843-8b3e-6844badcb45e/d_360_620/portada_la-casa-en-el-mar-mas-azul_tj-klune_202203161729.webp" alt="Miniatura del Libro 2" class="card-img-top book-thumbnail">
+                <div class="card-body book-details">
+                    <a href="pdf/La casa en el mar mas azul - T J Klune.pdf"_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="el_mito_de_sisifo">
+            <div class="card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677818404i/29793074.jpg">
+                <div class="card-body book-details">
+                    <a href="pdf/el_mito_de_sisifo (2).pdf"_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="Décimas a Dios - Pita Amor">
+            <div class="card">
+                <img src="https://www.u-topicas.com/imagenes/9786071/978607165746.JPG">
+                <div class="card-body book-details">
+                    <a href="pdf/Décimas a Dios - Pita Amor.pdf"_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        <article class="book-item" data-title="Obras_de_Pita_Amor">
+            <div class="card">
+                <img src="https://cultura.nexos.com.mx/wp-content/uploads/2018/05/01-anguiano.jpg">
+                <div class="card-body book-details">
+                    <a href="pdf/Obras_de_Pita_Amor.pdf"_blank" class="btn btn-primary">Leer PDF</a>
+                </div>
+            </div>
+        </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca de Libros. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Scripts de Bootstrap y JavaScript personalizado -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function searchBooks() {
+            var input, filter, books, title, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            books = document.getElementById('bookList').getElementsByClassName('book-item');
+            
+            for (i = 0; i < books.length; i++) {
+                title = books[i].getAttribute('data-title');
+                txtValue = title.toUpperCase();
+                if (txtValue.indexOf(filter) > -1) {
+                    books[i].style.display = "";
+                } else {
+                    books[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Estilos del cuerpo y del header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('https://wallpapers.com/images/featured-full/fondods-de-lirios-crvk3rywwctvasdh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body cubra toda la altura de la ventana */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 4px solid #8b5e3c; /* Color complementario */
+    position: relative;
+    border-radius: 0 0 15px 15px; /* Bordes redondeados en la parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mayor profundidad */
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Gloock', serif; /* Fuente victoriana */
+    font-style: italic; /* Texto en cursiva */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra en el texto para mayor legibilidad */
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; /* Añadir margen superior para separar del título */
+}
+
+.search-input {
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    width: 300px;
+    border: 2px solid #8b5e3c; /* Borde del input complementario */
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem; /* Tamaño de fuente más grande para mejor legibilidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input::placeholder {
+    color: #8b5e3c; /* Color del placeholder que complementa el diseño */
+}
+
+.search-button {
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    margin-left: -1px; /* Para eliminar el borde entre el input y el botón */
+    background-color: #8b5e3c; /* Color marrón vintage */
+    color: #fff;
+    border: 2px solid #8b5e3c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    font-family: 'Gloock', serif; /* Fuente victoriana */
+    font-weight: bold; /* Hacer el texto más destacado */
+    font-size: 1rem; /* Tamaño de fuente más grande para mejor legibilidad */
+}
+
+.search-button:hover {
+    background-color: #6f4f28; /* Color marrón más oscuro para el hover */
+    border-color: #6f4f28;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente en hover */
+}
+
+main {
+    padding: 1rem;
+    flex: 1; /* Permite que el main crezca y empuje el footer hacia abajo */
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 1rem;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top.book-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body.book-details {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+.btn-highlight {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #ff6347;
+    color: #fff;
+    border: 2px solid #ff6347;
+    font-family: 'Gloock', serif;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    z-index: 10; 
+}
+
+.btn-highlight:hover {
+    background-color: #ff4500; 
+    border-color: #ff4500;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+
